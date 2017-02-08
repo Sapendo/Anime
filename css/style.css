@@ -738,7 +738,6 @@ body {
 .text {
     color: #fff;
     font: bold 90px Arial;
-    opacity: 0;
 }
 .firstLine>div  {
     position: relative;
@@ -749,8 +748,8 @@ body {
             animation-name: firstTagline;
     -webkit-animation-duration: 10s;
             animation-duration: 10s;
-    -webkit-animation-delay: 5s;
-            animation-delay: 5s;
+    -webkit-animation-delay: 33s;
+            animation-delay: 33s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     opacity: 0;
@@ -761,27 +760,49 @@ body {
     top: 300px;
     -webkit-animation-name: firstTagline;
             animation-name: firstTagline;
-    -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-    -webkit-animation-delay: 5s;
-            animation-delay: 5s;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 33s;
+            animation-delay: 33s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     opacity: 0;
 }
+
+.secondTagline {
+    position: absolute;
+    left: 160px;
+    top: 200px;
+    -webkit-animation-name: firstTagline;
+            animation-name: firstTagline;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 40s;
+            animation-delay: 40s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    opacity: 0;
+}
+
 @-webkit-keyframes firstTagline {
     0% {
         opacity: 0;
     }
-    100% {
+    50% {
         opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 @keyframes firstTagline {
     0% {
         opacity: 0;
     }
-    100% {
+    50% {
         opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
